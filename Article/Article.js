@@ -124,9 +124,18 @@ const articleFrstP1 = document.createElement('p')
 const articleFrstP2 = document.createElement('p') 
 const articleSecP3 = document.createElement('p') 
 
-const articleSpan = document.createElement('span')
+const buttonSpan = document.createElement('span')
 
 
-articleSpan.addEventListener("toggle",articleOpen);
-};
+buttonSpan.addEventListener("click",articleOpen{
+ articleOpen.classList.toggle('toggle-on')
+})
+}
 
+return article
+}
+
+for (let i = 0; i < Data.length; i++) {
+  const article = makePanel(Data[i])
+  .appendChild(article)
+}
